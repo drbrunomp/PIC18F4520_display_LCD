@@ -64,10 +64,7 @@
 #include <xc.h>
 #include <stdio.h>
 #include"LCD4b_EXSTO.h"
-#define S1 PORTCbits.RC0
-#define S2 PORTCbits.RC1
-#define S3 PORTCbits.RC2
-#define S4 PORTCbits.RC3
+#define B1 PORTBbits.RB0
 #define _XTAL_FREQ 8000000
 
 unsigned int VdigADC_AN0;
@@ -75,9 +72,19 @@ unsigned int VdigADC_AN0;
 unsigned char BufferLCD_Voltage[16],
               BufferLCD_Press[16];
 
+char BufferS1[8],
+     BufferS2[8],
+     BufferS3[8],
+     BufferS4[8];
+
 float PressSensor,
       VoltageSensor,
       PressPercent;
+
+int SolS1,
+    SolS2,
+    SolS3,
+    SolS4;
 
 
 void config_FOSC()
@@ -88,6 +95,7 @@ void config_FOSC()
 
 void config_IO()
 {
+    TRISB = 0X01;
     TRISC = 0X00;
     PORTC = 0X00;
 }
@@ -131,36 +139,71 @@ void lcd_SENSOR()
     lcd_write(2,10,BufferLCD_Press);
 }
 
+void lcd_PERIPHERAL()
+{    
+    sprintf(BufferS1,
+            "%01d     ",
+            SolS1);
+    
+    sprintf(BufferS2,
+            "%01d     ",
+            SolS2);
+    
+    sprintf(BufferS3,
+            "%01d     ",
+            SolS3);
+    
+    sprintf(BufferS4,
+            "%01d     ",
+            SolS4);
+    
+    lcd_clear();
+    __delay_ms(20);
+    lcd_write(1,1,"S1:");
+    lcd_write(1,4,BufferS1);
+    lcd_write(1,8,"S2:");
+    lcd_write(1,11,BufferS2);
+    lcd_write(2,1,"S3:");
+    lcd_write(2,4,BufferS3);
+    lcd_write(2,8,"S4: ");
+    lcd_write(2,11,BufferS4);
+}
+
 void logic_CONTROL()
 {
     if(PressSensor <= (0.25*65))
     {
-        S1 = 1;
-        S2 = 0;
-        S3 = 0;
-        S4 = 0;
+        SolS1 = 1;
+        SolS2 = 0;
+        SolS3 = 0;
+        SolS4 = 0;
     }
     else if(PressSensor > (0.25*65) && PressSensor <= (0.50*65))
     {
-        S1 = 1;
-        S2 = 1;
-        S3 = 0;
-        S4 = 0;
+        SolS1 = 1;
+        SolS2 = 1;
+        SolS3 = 0;
+        SolS4 = 0;
     }
     else if(PressSensor > (0.50*65) && PressSensor <= (0.75*65))
     {
-        S1 = 1;
-        S2 = 1;
-        S3 = 1;
-        S4 = 0;
+        SolS1 = 1;
+        SolS2 = 1;
+        SolS3 = 1;
+        SolS4 = 0;
     }
     else if(PressSensor > (0.75*65))
     {
-        S1 = 1;
-        S2 = 1;
-        S3 = 1;
-        S4 = 1;
+        SolS1 = 1;
+        SolS2 = 1;
+        SolS3 = 1;
+        SolS4 = 1;
     }
+    
+    PORTCbits.RC0 = SolS1;
+    PORTCbits.RC1 = SolS2;
+    PORTCbits.RC2 = SolS3;
+    PORTCbits.RC3 = SolS4;
 }
 void main()
 {
@@ -173,6 +216,7 @@ void main()
         conv_AN0();
         equation_SENSOR();
         logic_CONTROL();
-        lcd_SENSOR();        
+        if(B1 == 0) lcd_SENSOR();
+        else lcd_PERIPHERAL();        
     }    
 }

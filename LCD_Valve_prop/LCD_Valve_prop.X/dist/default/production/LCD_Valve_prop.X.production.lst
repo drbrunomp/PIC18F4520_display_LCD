@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.46 build 20240104201356 
-                                                                                               Mon Aug 19 22:00:35 2024
+                                                                                               Wed Aug 28 13:51:05 2024
 
 Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1 
      1                           	processor	18F4520
@@ -818,7 +818,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    804 ;;
    805 ;; *************** function _main *****************
    806 ;; Defined at:
-   807 ;;		line 164 in file "Main_program.c"
+   807 ;;		line 165 in file "Main_program.c"
    808 ;; Parameters:    Size  Location     Type
    809 ;;		None
    810 ;; Auto vars:     Size  Location     Type
@@ -858,29 +858,29 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    844   002FBA                     _main:
    845                           	callstack 22
    846   002FBA                     
-   847                           ;Main_program.c: 166:     config_FOSC();
+   847                           ;Main_program.c: 167:     config_FOSC();
    848   002FBA  EC2F  F018         	call	_config_FOSC	;wreg free
    849                           
-   850                           ;Main_program.c: 167:     config_IO();
+   850                           ;Main_program.c: 168:     config_IO();
    851   002FBE  EC2A  F018         	call	_config_IO	;wreg free
    852                           
-   853                           ;Main_program.c: 168:     config_ADC();
+   853                           ;Main_program.c: 169:     config_ADC();
    854   002FC2  EC23  F018         	call	_config_ADC	;wreg free
    855   002FC6                     
-   856                           ;Main_program.c: 169:     lcd_init();
+   856                           ;Main_program.c: 170:     lcd_init();
    857   002FC6  ECDB  F015         	call	_lcd_init	;wreg free
    858   002FCA                     l4535:
    859                           
-   860                           ;Main_program.c: 171:     {;Main_program.c: 172:         conv_AN0();
+   860                           ;Main_program.c: 172:     {;Main_program.c: 173:         conv_AN0();
    861   002FCA  ECAD  F017         	call	_conv_AN0	;wreg free
    862   002FCE                     
-   863                           ;Main_program.c: 173:         equation_SENSOR();
+   863                           ;Main_program.c: 174:         equation_SENSOR();
    864   002FCE  EC24  F014         	call	_equation_SENSOR	;wreg free
    865   002FD2                     
-   866                           ;Main_program.c: 174:         logic_CONTROL();
+   866                           ;Main_program.c: 175:         logic_CONTROL();
    867   002FD2  EC7F  F011         	call	_logic_CONTROL	;wreg free
    868   002FD6                     
-   869                           ;Main_program.c: 175:         lcd_SENSOR();
+   869                           ;Main_program.c: 176:         lcd_SENSOR();
    870   002FD6  EC2A  F016         	call	_lcd_SENSOR	;wreg free
    871   002FDA  EFE5  F017         	goto	l4535
    872   002FDE  EF00  F000         	goto	start
@@ -889,7 +889,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    875                           
    876 ;; *************** function _logic_CONTROL *****************
    877 ;; Defined at:
-   878 ;;		line 133 in file "Main_program.c"
+   878 ;;		line 134 in file "Main_program.c"
    879 ;; Parameters:    Size  Location     Type
    880 ;;		None
    881 ;; Auto vars:     Size  Location     Type
@@ -923,7 +923,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    909   0022FE                     _logic_CONTROL:
    910                           	callstack 29
    911   0022FE                     
-   912                           ;Main_program.c: 135:     if(PressSensor <= (0.25*65))
+   912                           ;Main_program.c: 136:     if(PressSensor <= (0.25*65))
    913   0022FE  0E00               	movlw	0
    914   002300  6E28               	movwf	___flge@ff1^0,c
    915   002302  0E00               	movlw	0
@@ -944,19 +944,19 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    930   00232C  EF9E  F011         	goto	l4515
    931   002330                     u5480:
    932   002330                     
-   933                           ;Main_program.c: 136:     {;Main_program.c: 137:         PORTCbits.RC0 = 1;
+   933                           ;Main_program.c: 137:     {;Main_program.c: 138:         PORTCbits.RC0 = 1;
    934   002330  8082               	bsf	130,0,c	;volatile
    935                           
-   936                           ;Main_program.c: 138:         PORTCbits.RC1 = 0;
+   936                           ;Main_program.c: 139:         PORTCbits.RC1 = 0;
    937   002332  9282               	bcf	130,1,c	;volatile
    938                           
-   939                           ;Main_program.c: 139:         PORTCbits.RC2 = 0;
+   939                           ;Main_program.c: 140:         PORTCbits.RC2 = 0;
    940   002334  9482               	bcf	130,2,c	;volatile
    941                           
-   942                           ;Main_program.c: 140:         PORTCbits.RC3 = 0;
+   942                           ;Main_program.c: 141:         PORTCbits.RC3 = 0;
    943   002336  9682               	bcf	130,3,c	;volatile
    944                           
-   945                           ;Main_program.c: 141:     }
+   945                           ;Main_program.c: 142:     }
    946   002338  EF2D  F012         	goto	l115
    947   00233C                     l4515:
    948   00233C  0E00               	movlw	0
@@ -998,19 +998,19 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    984   00239C  EFD6  F011         	goto	l4521
    985   0023A0                     u5500:
    986   0023A0                     
-   987                           ;Main_program.c: 143:     {;Main_program.c: 144:         PORTCbits.RC0 = 1;
+   987                           ;Main_program.c: 144:     {;Main_program.c: 145:         PORTCbits.RC0 = 1;
    988   0023A0  8082               	bsf	130,0,c	;volatile
    989                           
-   990                           ;Main_program.c: 145:         PORTCbits.RC1 = 1;
+   990                           ;Main_program.c: 146:         PORTCbits.RC1 = 1;
    991   0023A2  8282               	bsf	130,1,c	;volatile
    992                           
-   993                           ;Main_program.c: 146:         PORTCbits.RC2 = 0;
+   993                           ;Main_program.c: 147:         PORTCbits.RC2 = 0;
    994   0023A4  9482               	bcf	130,2,c	;volatile
    995                           
-   996                           ;Main_program.c: 147:         PORTCbits.RC3 = 0;
+   996                           ;Main_program.c: 148:         PORTCbits.RC3 = 0;
    997   0023A6  9682               	bcf	130,3,c	;volatile
    998                           
-   999                           ;Main_program.c: 148:     }
+   999                           ;Main_program.c: 149:     }
   1000   0023A8  EF2D  F012         	goto	l115
   1001   0023AC                     l4521:
   1002   0023AC  0E00               	movlw	0
@@ -1052,19 +1052,19 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1038   00240C  EF0E  F012         	goto	l4527
   1039   002410                     u5520:
   1040   002410                     
-  1041                           ;Main_program.c: 150:     {;Main_program.c: 151:         PORTCbits.RC0 = 1;
+  1041                           ;Main_program.c: 151:     {;Main_program.c: 152:         PORTCbits.RC0 = 1;
   1042   002410  8082               	bsf	130,0,c	;volatile
   1043                           
-  1044                           ;Main_program.c: 152:         PORTCbits.RC1 = 1;
+  1044                           ;Main_program.c: 153:         PORTCbits.RC1 = 1;
   1045   002412  8282               	bsf	130,1,c	;volatile
   1046                           
-  1047                           ;Main_program.c: 153:         PORTCbits.RC2 = 1;
+  1047                           ;Main_program.c: 154:         PORTCbits.RC2 = 1;
   1048   002414  8482               	bsf	130,2,c	;volatile
   1049                           
-  1050                           ;Main_program.c: 154:         PORTCbits.RC3 = 0;
+  1050                           ;Main_program.c: 155:         PORTCbits.RC3 = 0;
   1051   002416  9682               	bcf	130,3,c	;volatile
   1052                           
-  1053                           ;Main_program.c: 155:     }
+  1053                           ;Main_program.c: 156:     }
   1054   002418  EF2D  F012         	goto	l115
   1055   00241C                     l4527:
   1056   00241C  0E00               	movlw	0
@@ -1087,16 +1087,16 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1073   00244A  EF2D  F012         	goto	l111
   1074   00244E                     u5530:
   1075   00244E                     
-  1076                           ;Main_program.c: 157:     {;Main_program.c: 158:         PORTCbits.RC0 = 1;
+  1076                           ;Main_program.c: 158:     {;Main_program.c: 159:         PORTCbits.RC0 = 1;
   1077   00244E  8082               	bsf	130,0,c	;volatile
   1078                           
-  1079                           ;Main_program.c: 159:         PORTCbits.RC1 = 1;
+  1079                           ;Main_program.c: 160:         PORTCbits.RC1 = 1;
   1080   002450  8282               	bsf	130,1,c	;volatile
   1081                           
-  1082                           ;Main_program.c: 160:         PORTCbits.RC2 = 1;
+  1082                           ;Main_program.c: 161:         PORTCbits.RC2 = 1;
   1083   002452  8482               	bsf	130,2,c	;volatile
   1084                           
-  1085                           ;Main_program.c: 161:         PORTCbits.RC3 = 1;
+  1085                           ;Main_program.c: 162:         PORTCbits.RC3 = 1;
   1086   002454  8682               	bsf	130,3,c	;volatile
   1087   002456  EF2D  F012         	goto	l115
   1088   00245A                     l111:
@@ -1271,7 +1271,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1257                           
   1258 ;; *************** function _lcd_SENSOR *****************
   1259 ;; Defined at:
-  1260 ;;		line 117 in file "Main_program.c"
+  1260 ;;		line 118 in file "Main_program.c"
   1261 ;; Parameters:    Size  Location     Type
   1262 ;;		None
   1263 ;; Auto vars:     Size  Location     Type
@@ -1306,7 +1306,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1292   002C54                     _lcd_SENSOR:
   1293                           	callstack 22
   1294   002C54                     
-  1295                           ;Main_program.c: 119:    sprintf(BufferLCD_Press,
+  1295                           ;Main_program.c: 120:    sprintf(BufferLCD_Press,
   1296   002C54  0ED2               	movlw	low _BufferLCD_Press
   1297   002C56  0100               	movlb	0	; () banked
   1298   002C58  6FAF               	movwf	sprintf@s& (0+255),b
@@ -1318,7 +1318,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1304   002C6A  C06C  F0B4         	movff	_PressSensor+3,?_sprintf+5
   1305   002C6E  EC75  F017         	call	_sprintf	;wreg free
   1306                           
-  1307                           ;Main_program.c: 123:    sprintf(BufferLCD_Voltage,
+  1307                           ;Main_program.c: 124:    sprintf(BufferLCD_Voltage,
   1308   002C72  0EE2               	movlw	low _BufferLCD_Voltage
   1309   002C74  0100               	movlb	0	; () banked
   1310   002C76  6FAF               	movwf	sprintf@s& (0+255),b
@@ -1330,7 +1330,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1316   002C88  C0D1  F0B4         	movff	_VoltageSensor+3,?_sprintf+5
   1317   002C8C  EC75  F017         	call	_sprintf	;wreg free
   1318   002C90                     
-  1319                           ;Main_program.c: 127:     lcd_write(1,1,"SENSOR:        ");
+  1319                           ;Main_program.c: 128:     lcd_write(1,1,"SENSOR:        ");
   1320   002C90  0E01               	movlw	1
   1321   002C92  6E07               	movwf	lcd_write@col^0,c
   1322   002C94  0E01               	movlw	low STR_3
@@ -1342,7 +1342,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1328   002CA0  0E01               	movlw	1
   1329   002CA2  EC8B  F015         	call	_lcd_write
   1330   002CA6                     
-  1331                           ;Main_program.c: 128:     lcd_write(1,9,BufferLCD_Voltage);
+  1331                           ;Main_program.c: 129:     lcd_write(1,9,BufferLCD_Voltage);
   1332   002CA6  0E09               	movlw	9
   1333   002CA8  6E07               	movwf	lcd_write@col^0,c
   1334   002CAA  0EE2               	movlw	low _BufferLCD_Voltage
@@ -1351,7 +1351,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1337   002CB0  0E01               	movlw	1
   1338   002CB2  EC8B  F015         	call	_lcd_write
   1339   002CB6                     
-  1340                           ;Main_program.c: 129:     lcd_write(2,1,"PRESSAO:       ");
+  1340                           ;Main_program.c: 130:     lcd_write(2,1,"PRESSAO:       ");
   1341   002CB6  0E01               	movlw	1
   1342   002CB8  6E07               	movwf	lcd_write@col^0,c
   1343   002CBA  0E11               	movlw	low STR_4
@@ -1363,7 +1363,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1349   002CC6  0E02               	movlw	2
   1350   002CC8  EC8B  F015         	call	_lcd_write
   1351   002CCC                     
-  1352                           ;Main_program.c: 130:     lcd_write(2,10,BufferLCD_Press);
+  1352                           ;Main_program.c: 131:     lcd_write(2,10,BufferLCD_Press);
   1353   002CCC  0E0A               	movlw	10
   1354   002CCE  6E07               	movwf	lcd_write@col^0,c
   1355   002CD0  0ED2               	movlw	low _BufferLCD_Press
@@ -6260,7 +6260,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   6102                           
   6103 ;; *************** function _equation_SENSOR *****************
   6104 ;; Defined at:
-  6105 ;;		line 110 in file "Main_program.c"
+  6105 ;;		line 111 in file "Main_program.c"
   6106 ;; Parameters:    Size  Location     Type
   6107 ;;		None
   6108 ;; Auto vars:     Size  Location     Type
@@ -6296,7 +6296,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   6138   002848                     _equation_SENSOR:
   6139                           	callstack 29
   6140   002848                     
-  6141                           ;Main_program.c: 112:     VoltageSensor = 0.0048875855 * VdigADC_AN0;
+  6141                           ;Main_program.c: 113:     VoltageSensor = 0.0048875855 * VdigADC_AN0;
   6142   002848  C072  F001         	movff	_VdigADC_AN0,___xxtofl@val
   6143   00284C  C073  F002         	movff	_VdigADC_AN0+1,___xxtofl@val+1
   6144   002850  6A03               	clrf	(___xxtofl@val+2)^0,c
@@ -6321,7 +6321,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   6163   002886  C011  F0D0         	movff	?___flmul+2,_VoltageSensor+2
   6164   00288A  C012  F0D1         	movff	?___flmul+3,_VoltageSensor+3
   6165   00288E                     
-  6166                           ;Main_program.c: 113:     PressSensor = VoltageSensor / 0.0769230769;
+  6166                           ;Main_program.c: 114:     PressSensor = VoltageSensor / 0.0769230769;
   6167   00288E  C0CE  F028         	movff	_VoltageSensor,___fldiv@b
   6168   002892  C0CF  F029         	movff	_VoltageSensor+1,___fldiv@b+1
   6169   002896  C0D0  F02A         	movff	_VoltageSensor+2,___fldiv@b+2
@@ -6340,7 +6340,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   6182   0028BA  C02A  F06B         	movff	?___fldiv+2,_PressSensor+2
   6183   0028BE  C02B  F06C         	movff	?___fldiv+3,_PressSensor+3
   6184   0028C2                     
-  6185                           ;Main_program.c: 114:     PressPercent = (PressSensor * 100) / 65;
+  6185                           ;Main_program.c: 115:     PressPercent = (PressSensor * 100) / 65;
   6186   0028C2  0E00               	movlw	0
   6187   0028C4  6E13               	movwf	___flmul@a^0,c
   6188   0028C6  0E00               	movlw	0
@@ -7621,7 +7621,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   7463                           
   7464 ;; *************** function _conv_AN0 *****************
   7465 ;; Defined at:
-  7466 ;;		line 101 in file "Main_program.c"
+  7466 ;;		line 102 in file "Main_program.c"
   7467 ;; Parameters:    Size  Location     Type
   7468 ;;		None
   7469 ;; Auto vars:     Size  Location     Type
@@ -7654,7 +7654,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   7496   002F5A                     _conv_AN0:
   7497                           	callstack 30
   7498   002F5A                     
-  7499                           ;Main_program.c: 103:     _delay((unsigned long)((50)*(8000000/4000.0)));
+  7499                           ;Main_program.c: 104:     _delay((unsigned long)((50)*(8000000/4000.0)));
   7500   002F5A  0E82               	movlw	130
   7501   002F5C  6E01               	movwf	??_conv_AN0^0,c
   7502   002F5E  0EDE               	movlw	222
@@ -7664,7 +7664,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   7506   002F64  2E01               	decfsz	??_conv_AN0^0,f,c
   7507   002F66  D7FC               	bra	u5637
   7508   002F68                     
-  7509                           ;Main_program.c: 104:     ADCON0bits.GO = 1;
+  7509                           ;Main_program.c: 105:     ADCON0bits.GO = 1;
   7510   002F68  82C2               	bsf	194,1,c	;volatile
   7511   002F6A                     l96:
   7512   002F6A  B2C2               	btfsc	194,1,c	;volatile
@@ -7674,11 +7674,11 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   7516   002F74  EFB5  F017         	goto	l96
   7517   002F78                     u1850:
   7518   002F78                     
-  7519                           ;Main_program.c: 106:     VdigADC_AN0 = ADRESH;
+  7519                           ;Main_program.c: 107:     VdigADC_AN0 = ADRESH;
   7520   002F78  CFC4 F072          	movff	4036,_VdigADC_AN0	;volatile
   7521   002F7C  6A73               	clrf	(_VdigADC_AN0+1)^0,c
   7522   002F7E                     
-  7523                           ;Main_program.c: 107:     VdigADC_AN0 = (VdigADC_AN0 << 8) + ADRESL;
+  7523                           ;Main_program.c: 108:     VdigADC_AN0 = (VdigADC_AN0 << 8) + ADRESL;
   7524   002F7E  5072               	movf	_VdigADC_AN0^0,w,c
   7525   002F80  6E01               	movwf	??_conv_AN0^0,c
   7526   002F82  50C3               	movf	195,w,c	;volatile
@@ -7690,7 +7690,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   7532                           
   7533 ;; *************** function _config_IO *****************
   7534 ;; Defined at:
-  7535 ;;		line 88 in file "Main_program.c"
+  7535 ;;		line 89 in file "Main_program.c"
   7536 ;; Parameters:    Size  Location     Type
   7537 ;;		None
   7538 ;; Auto vars:     Size  Location     Type
@@ -7723,11 +7723,11 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   7565   003054                     _config_IO:
   7566                           	callstack 30
   7567   003054                     
-  7568                           ;Main_program.c: 90:     TRISC = 0X00;
+  7568                           ;Main_program.c: 91:     TRISC = 0X00;
   7569   003054  0E00               	movlw	0
   7570   003056  6E94               	movwf	148,c	;volatile
   7571                           
-  7572                           ;Main_program.c: 91:     PORTC = 0X00;
+  7572                           ;Main_program.c: 92:     PORTC = 0X00;
   7573   003058  0E00               	movlw	0
   7574   00305A  6E82               	movwf	130,c	;volatile
   7575   00305C  0012               	return		;funcret
@@ -7736,7 +7736,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   7578                           
   7579 ;; *************** function _config_FOSC *****************
   7580 ;; Defined at:
-  7581 ;;		line 82 in file "Main_program.c"
+  7581 ;;		line 83 in file "Main_program.c"
   7582 ;; Parameters:    Size  Location     Type
   7583 ;;		None
   7584 ;; Auto vars:     Size  Location     Type
@@ -7769,11 +7769,11 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   7611   00305E                     _config_FOSC:
   7612                           	callstack 30
   7613   00305E                     
-  7614                           ;Main_program.c: 84:     OSCCON = 0X00;
+  7614                           ;Main_program.c: 85:     OSCCON = 0X00;
   7615   00305E  0E00               	movlw	0
   7616   003060  6ED3               	movwf	211,c	;volatile
   7617                           
-  7618                           ;Main_program.c: 85:     OSCTUNE = 0X00;
+  7618                           ;Main_program.c: 86:     OSCTUNE = 0X00;
   7619   003062  0E00               	movlw	0
   7620   003064  6E9B               	movwf	155,c	;volatile
   7621   003066  0012               	return		;funcret
@@ -7782,7 +7782,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   7624                           
   7625 ;; *************** function _config_ADC *****************
   7626 ;; Defined at:
-  7627 ;;		line 94 in file "Main_program.c"
+  7627 ;;		line 95 in file "Main_program.c"
   7628 ;; Parameters:    Size  Location     Type
   7629 ;;		None
   7630 ;; Auto vars:     Size  Location     Type
@@ -7815,15 +7815,15 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   7657   003046                     _config_ADC:
   7658                           	callstack 30
   7659   003046                     
-  7660                           ;Main_program.c: 96:     ADCON0 = 0X01;
+  7660                           ;Main_program.c: 97:     ADCON0 = 0X01;
   7661   003046  0E01               	movlw	1
   7662   003048  6EC2               	movwf	194,c	;volatile
   7663                           
-  7664                           ;Main_program.c: 97:     ADCON1 = 0X0E;
+  7664                           ;Main_program.c: 98:     ADCON1 = 0X0E;
   7665   00304A  0E0E               	movlw	14
   7666   00304C  6EC1               	movwf	193,c	;volatile
   7667                           
-  7668                           ;Main_program.c: 98:     ADCON2 = 0X80;
+  7668                           ;Main_program.c: 99:     ADCON2 = 0X80;
   7669   00304E  0E80               	movlw	128
   7670   003050  6EC0               	movwf	192,c	;volatile
   7671   003052  0012               	return		;funcret
@@ -8416,7 +8416,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.46 build 20240104201356 
-Symbol Table                                                                                   Mon Aug 19 22:00:35 2024
+Symbol Table                                                                                   Wed Aug 28 13:51:05 2024
 
               ___fldiv@aexp 0040                ___fldiv@bexp 003F                ___fldiv@sign 0038  
                         l30 3044                          l23 3026                          l42 2BB4  

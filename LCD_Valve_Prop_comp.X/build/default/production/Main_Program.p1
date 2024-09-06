@@ -5,6 +5,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2529
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 2529: extern volatile unsigned char OSCTUNE __attribute__((address(0xF9B)));
 [v _OSCTUNE `Vuc ~T0 @X0 0 e@3995 ]
+"1699
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 1699: extern volatile unsigned char TRISB __attribute__((address(0xF93)));
+[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
 "1921
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 1921: extern volatile unsigned char TRISC __attribute__((address(0xF94)));
 [v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
@@ -75,6 +78,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "25 ./LCD4b_EXSTO.h
 [; ;./LCD4b_EXSTO.h: 25: void lcd_write(char lin, char col, char *str);
 [v _lcd_write `(v ~T0 @X0 0 ef3`uc`uc`*uc ]
+"24
+[; ;./LCD4b_EXSTO.h: 24: void lcd_clear(void);
+[v _lcd_clear `(v ~T0 @X0 0 ef ]
 "456 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 456:     struct {
 [s S23 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -106,7 +112,34 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20 ./LCD4b_EXSTO.h
 [; ;./LCD4b_EXSTO.h: 20: void lcd_init(void);
 [v _lcd_init `(v ~T0 @X0 0 ef ]
-"6 Main_program.c
+"277 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 277:     struct {
+[s S17 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S17 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"287
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 287:     struct {
+[s S18 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S18 . INT0 INT1 INT2 CCP2 KBI0 KBI1 KBI2 KBI3 ]
+"297
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 297:     struct {
+[s S19 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S19 . AN12 AN10 AN8 AN9 AN11 PGM PGC PGD ]
+"307
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 307:     struct {
+[s S20 :1 `uc 1 ]
+[n S20 . FLT0 ]
+"310
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 310:     struct {
+[s S21 :3 `uc 1 :1 `uc 1 ]
+[n S21 . . CCP2_PA2 ]
+"276
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 276: typedef union {
+[u S16 `S17 1 `S18 1 `S19 1 `S20 1 `S21 1 ]
+[n S16 . . . . . . ]
+"315
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 315: extern volatile PORTBbits_t PORTBbits __attribute__((address(0xF81)));
+[v _PORTBbits `VS16 ~T0 @X0 0 e@3969 ]
+"6 Main_Program.c
 [p x OSC  =  HS          ]
 "7
 [p x FCMEN  =  OFF       ]
@@ -586,319 +619,427 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7001
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h: 7001: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"73 Main_program.c
-[; ;Main_program.c: 73: unsigned int VdigADC_AN0;
+"70 Main_Program.c
+[; ;Main_Program.c: 70: unsigned int VdigADC_AN0;
 [v _VdigADC_AN0 `ui ~T0 @X0 1 e ]
-"75
-[; ;Main_program.c: 75: unsigned char BufferLCD_Voltage[16],
+"72
+[; ;Main_Program.c: 72: unsigned char BufferLCD_Voltage[16],
 [v _BufferLCD_Voltage `uc ~T0 @X0 -> 16 `i e ]
-"76
-[; ;Main_program.c: 76:               BufferLCD_Press[16];
+"73
+[; ;Main_Program.c: 73:               BufferLCD_Press[16];
 [v _BufferLCD_Press `uc ~T0 @X0 -> 16 `i e ]
+"75
+[; ;Main_Program.c: 75: char BufferS1[8],
+[v _BufferS1 `uc ~T0 @X0 -> 8 `i e ]
+"76
+[; ;Main_Program.c: 76:      BufferS2[8],
+[v _BufferS2 `uc ~T0 @X0 -> 8 `i e ]
+"77
+[; ;Main_Program.c: 77:      BufferS3[8],
+[v _BufferS3 `uc ~T0 @X0 -> 8 `i e ]
 "78
-[; ;Main_program.c: 78: float PressSensor,
-[v _PressSensor `f ~T0 @X0 1 e ]
-"79
-[; ;Main_program.c: 79:       VoltageSensor,
-[v _VoltageSensor `f ~T0 @X0 1 e ]
+[; ;Main_Program.c: 78:      BufferS4[8];
+[v _BufferS4 `uc ~T0 @X0 -> 8 `i e ]
 "80
-[; ;Main_program.c: 80:       PressPercent;
+[; ;Main_Program.c: 80: float PressSensor,
+[v _PressSensor `f ~T0 @X0 1 e ]
+"81
+[; ;Main_Program.c: 81:       VoltageSensor,
+[v _VoltageSensor `f ~T0 @X0 1 e ]
+"82
+[; ;Main_Program.c: 82:       PressPercent;
 [v _PressPercent `f ~T0 @X0 1 e ]
-"83
-[; ;Main_program.c: 83: void config_FOSC()
-[v _config_FOSC `(v ~T0 @X0 1 ef ]
 "84
-[; ;Main_program.c: 84: {
+[; ;Main_Program.c: 84: int SolS1,
+[v _SolS1 `i ~T0 @X0 1 e ]
+"85
+[; ;Main_Program.c: 85:     SolS2,
+[v _SolS2 `i ~T0 @X0 1 e ]
+"86
+[; ;Main_Program.c: 86:     SolS3,
+[v _SolS3 `i ~T0 @X0 1 e ]
+"87
+[; ;Main_Program.c: 87:     SolS4;
+[v _SolS4 `i ~T0 @X0 1 e ]
+"90
+[; ;Main_Program.c: 90: void config_FOSC()
+[v _config_FOSC `(v ~T0 @X0 1 ef ]
+"91
+[; ;Main_Program.c: 91: {
 {
 [e :U _config_FOSC ]
 [f ]
-"85
-[; ;Main_program.c: 85:     OSCCON = 0X00;
+"92
+[; ;Main_Program.c: 92:     OSCCON = 0X00;
 [e = _OSCCON -> -> 0 `i `uc ]
-"86
-[; ;Main_program.c: 86:     OSCTUNE = 0X00;
+"93
+[; ;Main_Program.c: 93:     OSCTUNE = 0X00;
 [e = _OSCTUNE -> -> 0 `i `uc ]
-"87
-[; ;Main_program.c: 87: }
+"94
+[; ;Main_Program.c: 94: }
 [e :UE 283 ]
 }
-"89
-[; ;Main_program.c: 89: void config_IO()
+"96
+[; ;Main_Program.c: 96: void config_IO()
 [v _config_IO `(v ~T0 @X0 1 ef ]
-"90
-[; ;Main_program.c: 90: {
+"97
+[; ;Main_Program.c: 97: {
 {
 [e :U _config_IO ]
 [f ]
-"91
-[; ;Main_program.c: 91:     TRISC = 0X00;
+"98
+[; ;Main_Program.c: 98:     TRISB = 0X01;
+[e = _TRISB -> -> 1 `i `uc ]
+"99
+[; ;Main_Program.c: 99:     TRISC = 0X00;
 [e = _TRISC -> -> 0 `i `uc ]
-"92
-[; ;Main_program.c: 92:     PORTC = 0X00;
+"100
+[; ;Main_Program.c: 100:     PORTC = 0X00;
 [e = _PORTC -> -> 0 `i `uc ]
-"93
-[; ;Main_program.c: 93: }
+"101
+[; ;Main_Program.c: 101: }
 [e :UE 284 ]
 }
-"95
-[; ;Main_program.c: 95: void config_ADC()
+"103
+[; ;Main_Program.c: 103: void config_ADC()
 [v _config_ADC `(v ~T0 @X0 1 ef ]
-"96
-[; ;Main_program.c: 96: {
+"104
+[; ;Main_Program.c: 104: {
 {
 [e :U _config_ADC ]
 [f ]
-"97
-[; ;Main_program.c: 97:     ADCON0 = 0X01;
+"105
+[; ;Main_Program.c: 105:     ADCON0 = 0X01;
 [e = _ADCON0 -> -> 1 `i `uc ]
-"98
-[; ;Main_program.c: 98:     ADCON1 = 0X0E;
+"106
+[; ;Main_Program.c: 106:     ADCON1 = 0X0E;
 [e = _ADCON1 -> -> 14 `i `uc ]
-"99
-[; ;Main_program.c: 99:     ADCON2 = 0X80;
+"107
+[; ;Main_Program.c: 107:     ADCON2 = 0X80;
 [e = _ADCON2 -> -> 128 `i `uc ]
-"100
-[; ;Main_program.c: 100: }
+"108
+[; ;Main_Program.c: 108: }
 [e :UE 285 ]
 }
-"102
-[; ;Main_program.c: 102: void conv_AN0()
+"110
+[; ;Main_Program.c: 110: void conv_AN0()
 [v _conv_AN0 `(v ~T0 @X0 1 ef ]
-"103
-[; ;Main_program.c: 103: {
+"111
+[; ;Main_Program.c: 111: {
 {
 [e :U _conv_AN0 ]
 [f ]
-"104
-[; ;Main_program.c: 104:     _delay((unsigned long)((50)*(8000000/4000.0)));
+"112
+[; ;Main_Program.c: 112:     _delay((unsigned long)((50)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"105
-[; ;Main_program.c: 105:     ADCON0bits.GO = 1;
+"113
+[; ;Main_Program.c: 113:     ADCON0bits.GO = 1;
 [e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
-"106
-[; ;Main_program.c: 106:     while(ADCON0bits.GO);
+"114
+[; ;Main_Program.c: 114:     while(ADCON0bits.GO);
 [e $U 287  ]
 [e :U 288 ]
 [e :U 287 ]
 [e $ != -> . . _ADCON0bits 2 1 `i -> 0 `i 288  ]
 [e :U 289 ]
-"107
-[; ;Main_program.c: 107:     VdigADC_AN0 = ADRESH;
+"115
+[; ;Main_Program.c: 115:     VdigADC_AN0 = ADRESH;
 [e = _VdigADC_AN0 -> _ADRESH `ui ]
-"108
-[; ;Main_program.c: 108:     VdigADC_AN0 = (VdigADC_AN0 << 8) + ADRESL;
+"116
+[; ;Main_Program.c: 116:     VdigADC_AN0 = (VdigADC_AN0 << 8) + ADRESL;
 [e = _VdigADC_AN0 + << _VdigADC_AN0 -> 8 `i -> _ADRESL `ui ]
-"109
-[; ;Main_program.c: 109: }
+"117
+[; ;Main_Program.c: 117: }
 [e :UE 286 ]
 }
-"111
-[; ;Main_program.c: 111: void equation_SENSOR()
+"119
+[; ;Main_Program.c: 119: void equation_SENSOR()
 [v _equation_SENSOR `(v ~T0 @X0 1 ef ]
-"112
-[; ;Main_program.c: 112: {
+"120
+[; ;Main_Program.c: 120: {
 {
 [e :U _equation_SENSOR ]
 [f ]
-"113
-[; ;Main_program.c: 113:     VoltageSensor = 0.0048875855 * VdigADC_AN0;
+"121
+[; ;Main_Program.c: 121:     VoltageSensor = 0.0048875855 * VdigADC_AN0;
 [e = _VoltageSensor -> * .0.0048875855 -> _VdigADC_AN0 `d `f ]
-"114
-[; ;Main_program.c: 114:     PressSensor = VoltageSensor / 0.0769230769;
+"122
+[; ;Main_Program.c: 122:     PressSensor = VoltageSensor / 0.0769230769;
 [e = _PressSensor -> / -> _VoltageSensor `d .0.0769230769 `f ]
-"115
-[; ;Main_program.c: 115:     PressPercent = (PressSensor * 100) / 65;
+"123
+[; ;Main_Program.c: 123:     PressPercent = (PressSensor * 100) / 65;
 [e = _PressPercent / * _PressSensor -> -> 100 `i `f -> -> 65 `i `f ]
-"116
-[; ;Main_program.c: 116: }
+"124
+[; ;Main_Program.c: 124: }
 [e :UE 290 ]
 }
-"118
-[; ;Main_program.c: 118: void lcd_SENSOR()
+"126
+[; ;Main_Program.c: 126: void lcd_SENSOR()
 [v _lcd_SENSOR `(v ~T0 @X0 1 ef ]
-"119
-[; ;Main_program.c: 119: {
+"127
+[; ;Main_Program.c: 127: {
 {
 [e :U _lcd_SENSOR ]
 [f ]
-"120
-[; ;Main_program.c: 120:    sprintf(BufferLCD_Press,
-[e ( _sprintf (1 , (. , -> &U _BufferLCD_Press `*uc :s 1C -> _PressSensor `d ]
-"124
-[; ;Main_program.c: 124:    sprintf(BufferLCD_Voltage,
-[e ( _sprintf (1 , (. , -> &U _BufferLCD_Voltage `*uc :s 2C -> _VoltageSensor `d ]
 "128
-[; ;Main_program.c: 128:     lcd_write(1,1,"SENSOR:        ");
-[e ( _lcd_write (3 , , -> -> 1 `i `uc -> -> 1 `i `uc :s 3C ]
-"129
-[; ;Main_program.c: 129:     lcd_write(1,9,BufferLCD_Voltage);
-[e ( _lcd_write (3 , , -> -> 1 `i `uc -> -> 9 `i `uc -> &U _BufferLCD_Voltage `*uc ]
-"130
-[; ;Main_program.c: 130:     lcd_write(2,1,"PRESSAO:       ");
-[e ( _lcd_write (3 , , -> -> 2 `i `uc -> -> 1 `i `uc :s 4C ]
-"131
-[; ;Main_program.c: 131:     lcd_write(2,10,BufferLCD_Press);
-[e ( _lcd_write (3 , , -> -> 2 `i `uc -> -> 10 `i `uc -> &U _BufferLCD_Press `*uc ]
+[; ;Main_Program.c: 128:    sprintf(BufferLCD_Press,
+[e ( _sprintf (1 , (. , -> &U _BufferLCD_Press `*uc :s 1C -> _PressSensor `d ]
 "132
-[; ;Main_program.c: 132: }
+[; ;Main_Program.c: 132:    sprintf(BufferLCD_Voltage,
+[e ( _sprintf (1 , (. , -> &U _BufferLCD_Voltage `*uc :s 2C -> _VoltageSensor `d ]
+"136
+[; ;Main_Program.c: 136:     lcd_write(1,1,"SENSOR:        ");
+[e ( _lcd_write (3 , , -> -> 1 `i `uc -> -> 1 `i `uc :s 3C ]
+"137
+[; ;Main_Program.c: 137:     lcd_write(1,9,BufferLCD_Voltage);
+[e ( _lcd_write (3 , , -> -> 1 `i `uc -> -> 9 `i `uc -> &U _BufferLCD_Voltage `*uc ]
+"138
+[; ;Main_Program.c: 138:     lcd_write(2,1,"PRESSAO:       ");
+[e ( _lcd_write (3 , , -> -> 2 `i `uc -> -> 1 `i `uc :s 4C ]
+"139
+[; ;Main_Program.c: 139:     lcd_write(2,10,BufferLCD_Press);
+[e ( _lcd_write (3 , , -> -> 2 `i `uc -> -> 10 `i `uc -> &U _BufferLCD_Press `*uc ]
+"140
+[; ;Main_Program.c: 140: }
 [e :UE 291 ]
 }
-"134
-[; ;Main_program.c: 134: void logic_CONTROL()
+"142
+[; ;Main_Program.c: 142: void lcd_PERIPHERAL()
+[v _lcd_PERIPHERAL `(v ~T0 @X0 1 ef ]
+"143
+[; ;Main_Program.c: 143: {
+{
+[e :U _lcd_PERIPHERAL ]
+[f ]
+"144
+[; ;Main_Program.c: 144:     sprintf(BufferS1,
+[e ( _sprintf (1 , (. , &U _BufferS1 :s 5C _SolS1 ]
+"148
+[; ;Main_Program.c: 148:     sprintf(BufferS2,
+[e ( _sprintf (1 , (. , &U _BufferS2 :s 6C _SolS2 ]
+"152
+[; ;Main_Program.c: 152:     sprintf(BufferS3,
+[e ( _sprintf (1 , (. , &U _BufferS3 :s 7C _SolS3 ]
+"156
+[; ;Main_Program.c: 156:     sprintf(BufferS4,
+[e ( _sprintf (1 , (. , &U _BufferS4 :s 8C _SolS4 ]
+"160
+[; ;Main_Program.c: 160:     lcd_clear();
+[e ( _lcd_clear ..  ]
+"161
+[; ;Main_Program.c: 161:     _delay((unsigned long)((20)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"162
+[; ;Main_Program.c: 162:     lcd_write(1,1,"S1:");
+[e ( _lcd_write (3 , , -> -> 1 `i `uc -> -> 1 `i `uc :s 9C ]
+"163
+[; ;Main_Program.c: 163:     lcd_write(1,4,BufferS1);
+[e ( _lcd_write (3 , , -> -> 1 `i `uc -> -> 4 `i `uc &U _BufferS1 ]
+"164
+[; ;Main_Program.c: 164:     lcd_write(1,8,"S2:");
+[e ( _lcd_write (3 , , -> -> 1 `i `uc -> -> 8 `i `uc :s 10C ]
+"165
+[; ;Main_Program.c: 165:     lcd_write(1,11,BufferS2);
+[e ( _lcd_write (3 , , -> -> 1 `i `uc -> -> 11 `i `uc &U _BufferS2 ]
+"166
+[; ;Main_Program.c: 166:     lcd_write(2,1,"S3:");
+[e ( _lcd_write (3 , , -> -> 2 `i `uc -> -> 1 `i `uc :s 11C ]
+"167
+[; ;Main_Program.c: 167:     lcd_write(2,4,BufferS3);
+[e ( _lcd_write (3 , , -> -> 2 `i `uc -> -> 4 `i `uc &U _BufferS3 ]
+"168
+[; ;Main_Program.c: 168:     lcd_write(2,8,"S4: ");
+[e ( _lcd_write (3 , , -> -> 2 `i `uc -> -> 8 `i `uc :s 12C ]
+"169
+[; ;Main_Program.c: 169:     lcd_write(2,11,BufferS4);
+[e ( _lcd_write (3 , , -> -> 2 `i `uc -> -> 11 `i `uc &U _BufferS4 ]
+"170
+[; ;Main_Program.c: 170: }
+[e :UE 292 ]
+}
+"172
+[; ;Main_Program.c: 172: void logic_CONTROL()
 [v _logic_CONTROL `(v ~T0 @X0 1 ef ]
-"135
-[; ;Main_program.c: 135: {
+"173
+[; ;Main_Program.c: 173: {
 {
 [e :U _logic_CONTROL ]
 [f ]
-"136
-[; ;Main_program.c: 136:     if(PressSensor <= (0.25*65))
-[e $ ! <= -> _PressSensor `d * .0.25 -> -> 65 `i `d 293  ]
-"137
-[; ;Main_program.c: 137:     {
+"174
+[; ;Main_Program.c: 174:     if(PressSensor <= (0.25*65))
+[e $ ! <= -> _PressSensor `d * .0.25 -> -> 65 `i `d 294  ]
+"175
+[; ;Main_Program.c: 175:     {
 {
-"138
-[; ;Main_program.c: 138:         PORTCbits.RC0 = 1;
-[e = . . _PORTCbits 0 0 -> -> 1 `i `uc ]
-"139
-[; ;Main_program.c: 139:         PORTCbits.RC1 = 0;
-[e = . . _PORTCbits 0 1 -> -> 0 `i `uc ]
-"140
-[; ;Main_program.c: 140:         PORTCbits.RC2 = 0;
-[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
-"141
-[; ;Main_program.c: 141:         PORTCbits.RC3 = 0;
-[e = . . _PORTCbits 0 3 -> -> 0 `i `uc ]
-"142
-[; ;Main_program.c: 142:     }
+"176
+[; ;Main_Program.c: 176:         SolS1 = 1;
+[e = _SolS1 -> 1 `i ]
+"177
+[; ;Main_Program.c: 177:         SolS2 = 0;
+[e = _SolS2 -> 0 `i ]
+"178
+[; ;Main_Program.c: 178:         SolS3 = 0;
+[e = _SolS3 -> 0 `i ]
+"179
+[; ;Main_Program.c: 179:         SolS4 = 0;
+[e = _SolS4 -> 0 `i ]
+"180
+[; ;Main_Program.c: 180:     }
 }
-[e $U 294  ]
-"143
-[; ;Main_program.c: 143:     else if(PressSensor > (0.25*65) && PressSensor <= (0.50*65))
-[e :U 293 ]
-[e $ ! && > -> _PressSensor `d * .0.25 -> -> 65 `i `d <= -> _PressSensor `d * .0.50 -> -> 65 `i `d 295  ]
-"144
-[; ;Main_program.c: 144:     {
-{
-"145
-[; ;Main_program.c: 145:         PORTCbits.RC0 = 1;
-[e = . . _PORTCbits 0 0 -> -> 1 `i `uc ]
-"146
-[; ;Main_program.c: 146:         PORTCbits.RC1 = 1;
-[e = . . _PORTCbits 0 1 -> -> 1 `i `uc ]
-"147
-[; ;Main_program.c: 147:         PORTCbits.RC2 = 0;
-[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
-"148
-[; ;Main_program.c: 148:         PORTCbits.RC3 = 0;
-[e = . . _PORTCbits 0 3 -> -> 0 `i `uc ]
-"149
-[; ;Main_program.c: 149:     }
-}
-[e $U 296  ]
-"150
-[; ;Main_program.c: 150:     else if(PressSensor > (0.50*65) && PressSensor <= (0.75*65))
-[e :U 295 ]
-[e $ ! && > -> _PressSensor `d * .0.50 -> -> 65 `i `d <= -> _PressSensor `d * .0.75 -> -> 65 `i `d 297  ]
-"151
-[; ;Main_program.c: 151:     {
-{
-"152
-[; ;Main_program.c: 152:         PORTCbits.RC0 = 1;
-[e = . . _PORTCbits 0 0 -> -> 1 `i `uc ]
-"153
-[; ;Main_program.c: 153:         PORTCbits.RC1 = 1;
-[e = . . _PORTCbits 0 1 -> -> 1 `i `uc ]
-"154
-[; ;Main_program.c: 154:         PORTCbits.RC2 = 1;
-[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
-"155
-[; ;Main_program.c: 155:         PORTCbits.RC3 = 0;
-[e = . . _PORTCbits 0 3 -> -> 0 `i `uc ]
-"156
-[; ;Main_program.c: 156:     }
-}
-[e $U 298  ]
-"157
-[; ;Main_program.c: 157:     else if(PressSensor > (0.75*65))
-[e :U 297 ]
-[e $ ! > -> _PressSensor `d * .0.75 -> -> 65 `i `d 299  ]
-"158
-[; ;Main_program.c: 158:     {
-{
-"159
-[; ;Main_program.c: 159:         PORTCbits.RC0 = 1;
-[e = . . _PORTCbits 0 0 -> -> 1 `i `uc ]
-"160
-[; ;Main_program.c: 160:         PORTCbits.RC1 = 1;
-[e = . . _PORTCbits 0 1 -> -> 1 `i `uc ]
-"161
-[; ;Main_program.c: 161:         PORTCbits.RC2 = 1;
-[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
-"162
-[; ;Main_program.c: 162:         PORTCbits.RC3 = 1;
-[e = . . _PORTCbits 0 3 -> -> 1 `i `uc ]
-"163
-[; ;Main_program.c: 163:     }
-}
-[e :U 299 ]
-[e :U 298 ]
-[e :U 296 ]
+[e $U 295  ]
+"181
+[; ;Main_Program.c: 181:     else if(PressSensor > (0.25*65) && PressSensor <= (0.50*65))
 [e :U 294 ]
-"164
-[; ;Main_program.c: 164: }
-[e :UE 292 ]
+[e $ ! && > -> _PressSensor `d * .0.25 -> -> 65 `i `d <= -> _PressSensor `d * .0.50 -> -> 65 `i `d 296  ]
+"182
+[; ;Main_Program.c: 182:     {
+{
+"183
+[; ;Main_Program.c: 183:         SolS1 = 1;
+[e = _SolS1 -> 1 `i ]
+"184
+[; ;Main_Program.c: 184:         SolS2 = 1;
+[e = _SolS2 -> 1 `i ]
+"185
+[; ;Main_Program.c: 185:         SolS3 = 0;
+[e = _SolS3 -> 0 `i ]
+"186
+[; ;Main_Program.c: 186:         SolS4 = 0;
+[e = _SolS4 -> 0 `i ]
+"187
+[; ;Main_Program.c: 187:     }
+}
+[e $U 297  ]
+"188
+[; ;Main_Program.c: 188:     else if(PressSensor > (0.50*65) && PressSensor <= (0.75*65))
+[e :U 296 ]
+[e $ ! && > -> _PressSensor `d * .0.50 -> -> 65 `i `d <= -> _PressSensor `d * .0.75 -> -> 65 `i `d 298  ]
+"189
+[; ;Main_Program.c: 189:     {
+{
+"190
+[; ;Main_Program.c: 190:         SolS1 = 1;
+[e = _SolS1 -> 1 `i ]
+"191
+[; ;Main_Program.c: 191:         SolS2 = 1;
+[e = _SolS2 -> 1 `i ]
+"192
+[; ;Main_Program.c: 192:         SolS3 = 1;
+[e = _SolS3 -> 1 `i ]
+"193
+[; ;Main_Program.c: 193:         SolS4 = 0;
+[e = _SolS4 -> 0 `i ]
+"194
+[; ;Main_Program.c: 194:     }
+}
+[e $U 299  ]
+"195
+[; ;Main_Program.c: 195:     else if(PressSensor > (0.75*65))
+[e :U 298 ]
+[e $ ! > -> _PressSensor `d * .0.75 -> -> 65 `i `d 300  ]
+"196
+[; ;Main_Program.c: 196:     {
+{
+"197
+[; ;Main_Program.c: 197:         SolS1 = 1;
+[e = _SolS1 -> 1 `i ]
+"198
+[; ;Main_Program.c: 198:         SolS2 = 1;
+[e = _SolS2 -> 1 `i ]
+"199
+[; ;Main_Program.c: 199:         SolS3 = 1;
+[e = _SolS3 -> 1 `i ]
+"200
+[; ;Main_Program.c: 200:         SolS4 = 1;
+[e = _SolS4 -> 1 `i ]
+"201
+[; ;Main_Program.c: 201:     }
+}
+[e :U 300 ]
+[e :U 299 ]
+[e :U 297 ]
+[e :U 295 ]
+"203
+[; ;Main_Program.c: 203:     PORTCbits.RC0 = SolS1;
+[e = . . _PORTCbits 0 0 -> _SolS1 `uc ]
+"204
+[; ;Main_Program.c: 204:     PORTCbits.RC1 = SolS2;
+[e = . . _PORTCbits 0 1 -> _SolS2 `uc ]
+"205
+[; ;Main_Program.c: 205:     PORTCbits.RC2 = SolS3;
+[e = . . _PORTCbits 0 2 -> _SolS3 `uc ]
+"206
+[; ;Main_Program.c: 206:     PORTCbits.RC3 = SolS4;
+[e = . . _PORTCbits 0 3 -> _SolS4 `uc ]
+"207
+[; ;Main_Program.c: 207: }
+[e :UE 293 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"165
-[; ;Main_program.c: 165: void main()
+"208
+[; ;Main_Program.c: 208: void main()
 [v _main `(v ~T0 @X0 1 ef ]
-"166
-[; ;Main_program.c: 166: {
+"209
+[; ;Main_Program.c: 209: {
 {
 [e :U _main ]
 [f ]
-"167
-[; ;Main_program.c: 167:     config_FOSC();
+"210
+[; ;Main_Program.c: 210:     config_FOSC();
 [e ( _config_FOSC ..  ]
-"168
-[; ;Main_program.c: 168:     config_IO();
+"211
+[; ;Main_Program.c: 211:     config_IO();
 [e ( _config_IO ..  ]
-"169
-[; ;Main_program.c: 169:     config_ADC();
+"212
+[; ;Main_Program.c: 212:     config_ADC();
 [e ( _config_ADC ..  ]
-"170
-[; ;Main_program.c: 170:     lcd_init();
+"213
+[; ;Main_Program.c: 213:     lcd_init();
 [e ( _lcd_init ..  ]
-"171
-[; ;Main_program.c: 171:     while(1)
-[e :U 302 ]
-"172
-[; ;Main_program.c: 172:     {
-{
-"173
-[; ;Main_program.c: 173:         conv_AN0();
-[e ( _conv_AN0 ..  ]
-"174
-[; ;Main_program.c: 174:         equation_SENSOR();
-[e ( _equation_SENSOR ..  ]
-"175
-[; ;Main_program.c: 175:         logic_CONTROL();
-[e ( _logic_CONTROL ..  ]
-"176
-[; ;Main_program.c: 176:         lcd_SENSOR();
-[e ( _lcd_SENSOR ..  ]
-"177
-[; ;Main_program.c: 177:     }
-}
-[e :U 301 ]
-[e $U 302  ]
+"214
+[; ;Main_Program.c: 214:     while(1)
 [e :U 303 ]
-"178
-[; ;Main_program.c: 178: }
-[e :UE 300 ]
+"215
+[; ;Main_Program.c: 215:     {
+{
+"216
+[; ;Main_Program.c: 216:         conv_AN0();
+[e ( _conv_AN0 ..  ]
+"217
+[; ;Main_Program.c: 217:         equation_SENSOR();
+[e ( _equation_SENSOR ..  ]
+"218
+[; ;Main_Program.c: 218:         logic_CONTROL();
+[e ( _logic_CONTROL ..  ]
+"219
+[; ;Main_Program.c: 219:         if(PORTBbits.RB0 == 0) lcd_SENSOR();
+[e $ ! == -> . . _PORTBbits 0 0 `i -> 0 `i 305  ]
+[e ( _lcd_SENSOR ..  ]
+[e $U 306  ]
+"220
+[; ;Main_Program.c: 220:         else lcd_PERIPHERAL();
+[e :U 305 ]
+[e ( _lcd_PERIPHERAL ..  ]
+[e :U 306 ]
+"221
+[; ;Main_Program.c: 221:     }
 }
-[p f _sprintf 8462340 ]
+[e :U 302 ]
+[e $U 303  ]
+[e :U 304 ]
+"222
+[; ;Main_Program.c: 222: }
+[e :UE 301 ]
+}
+[p f _sprintf 8495236 ]
+[a 11C 83 51 58 0 ]
+[a 10C 83 50 58 0 ]
+[a 9C 83 49 58 0 ]
+[a 12C 83 52 58 32 0 ]
+[a 5C 37 48 49 100 32 32 32 32 32 0 ]
+[a 6C 37 48 49 100 32 32 32 32 32 0 ]
+[a 7C 37 48 49 100 32 32 32 32 32 0 ]
+[a 8C 37 48 49 100 32 32 32 32 32 0 ]
 [a 2C 37 48 46 50 102 86 32 32 32 32 32 0 ]
 [a 1C 37 48 46 49 102 66 65 82 32 32 32 32 32 32 0 ]
 [a 4C 80 82 69 83 83 65 79 58 32 32 32 32 32 32 32 0 ]

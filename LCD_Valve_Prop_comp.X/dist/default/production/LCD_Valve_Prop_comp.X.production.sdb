@@ -5,8 +5,16 @@
 [d frameptr 4065 ]
 "4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
 "193 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
 [v _pad pad `(v  1 s 1 pad ]
+"513
+[v _dtoa dtoa `(v  1 s 1 dtoa ]
 "587
 [v _efgtoa efgtoa `(v  1 s 1 efgtoa ]
 "1158
@@ -65,7 +73,7 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"3 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_prop\LCD_Valve_prop.X\LCD4b_EXSTO.c
+"3 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_Prop_comp.X\LCD4b_EXSTO.c
 [v _lcd_init lcd_init `(v  1 e 1 0 ]
 "36
 [v _set_bit set_bit `(uc  1 e 1 0 ]
@@ -73,27 +81,66 @@
 [v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
 "63
 [v _lcd_send_byte lcd_send_byte `(v  1 e 1 0 ]
+"71
+[v _lcd_clear lcd_clear `(v  1 e 1 0 ]
 "83
 [v _lcd_write lcd_write `(v  1 e 1 0 ]
-"83 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_prop\LCD_Valve_prop.X\Main_program.c
+"90 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_Prop_comp.X\Main_Program.c
 [v _config_FOSC config_FOSC `(v  1 e 1 0 ]
-"89
+"96
 [v _config_IO config_IO `(v  1 e 1 0 ]
-"95
+"103
 [v _config_ADC config_ADC `(v  1 e 1 0 ]
-"102
+"110
 [v _conv_AN0 conv_AN0 `(v  1 e 1 0 ]
-"111
+"119
 [v _equation_SENSOR equation_SENSOR `(v  1 e 1 0 ]
-"118
+"126
 [v _lcd_SENSOR lcd_SENSOR `(v  1 e 1 0 ]
-"134
+"142
+[v _lcd_PERIPHERAL lcd_PERIPHERAL `(v  1 e 1 0 ]
+"172
 [v _logic_CONTROL logic_CONTROL `(v  1 e 1 0 ]
-"165
+"208
 [v _main main `(v  1 e 1 0 ]
-"450 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h
+[s S425 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"315 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4520.h
+[s S434 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 CCP2 1 0 :1:3 
+`uc 1 KBI0 1 0 :1:4 
+`uc 1 KBI1 1 0 :1:5 
+`uc 1 KBI2 1 0 :1:6 
+`uc 1 KBI3 1 0 :1:7 
+]
+[s S443 . 1 `uc 1 AN12 1 0 :1:0 
+`uc 1 AN10 1 0 :1:1 
+`uc 1 AN8 1 0 :1:2 
+`uc 1 AN9 1 0 :1:3 
+`uc 1 AN11 1 0 :1:4 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S452 . 1 `uc 1 FLT0 1 0 :1:0 
+]
+[s S454 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S457 . 1 `S425 1 . 1 0 `S434 1 . 1 0 `S443 1 . 1 0 `S452 1 . 1 0 `S454 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES457  1 e 1 @3969 ]
+"450
 [v _PORTC PORTC `VEuc  1 e 1 @3970 ]
-[s S345 . 1 `uc 1 RC0 1 0 :1:0 
+[s S347 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -103,7 +150,7 @@
 `uc 1 RC7 1 0 :1:7 
 ]
 "497
-[s S354 . 1 `uc 1 T1OSO 1 0 :1:0 
+[s S356 . 1 `uc 1 T1OSO 1 0 :1:0 
 `uc 1 T1OSI 1 0 :1:1 
 `uc 1 CCP1 1 0 :1:2 
 `uc 1 SCK 1 0 :1:3 
@@ -112,7 +159,7 @@
 `uc 1 TX 1 0 :1:6 
 `uc 1 RX 1 0 :1:7 
 ]
-[s S363 . 1 `uc 1 T13CKI 1 0 :1:0 
+[s S365 . 1 `uc 1 T13CKI 1 0 :1:0 
 `uc 1 CCP2 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SCL 1 0 :1:3 
@@ -121,16 +168,16 @@
 `uc 1 CK 1 0 :1:6 
 `uc 1 DT 1 0 :1:7 
 ]
-[s S372 . 1 `uc 1 T1CKI 1 0 :1:0 
+[s S374 . 1 `uc 1 T1CKI 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 P1A 1 0 :1:2 
 ]
-[s S376 . 1 `uc 1 . 1 0 :1:0 
+[s S378 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 PA2 1 0 :1:1 
 `uc 1 PA1 1 0 :1:2 
 ]
-[u S380 . 1 `S345 1 . 1 0 `S354 1 . 1 0 `S363 1 . 1 0 `S372 1 . 1 0 `S376 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES380  1 e 1 @3970 ]
+[u S382 . 1 `S347 1 . 1 0 `S356 1 . 1 0 `S365 1 . 1 0 `S374 1 . 1 0 `S378 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES382  1 e 1 @3970 ]
 "632
 [v _PORTD PORTD `VEuc  1 e 1 @3971 ]
 [s S163 . 1 `uc 1 RD0 1 0 :1:0 
@@ -206,6 +253,8 @@
 ]
 [u S99 . 1 `S34 1 . 1 0 `S63 1 . 1 0 `S68 1 . 1 0 `S70 1 . 1 0 `S73 1 . 1 0 `S76 1 . 1 0 `S79 1 . 1 0 `S84 1 . 1 0 `S89 1 . 1 0 `S94 1 . 1 0 ]
 [v _PORTEbits PORTEbits `VES99  1 e 1 @3972 ]
+"1699
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
 "1921
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
 "2143
@@ -230,38 +279,38 @@
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
 "4775
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-[s S268 . 1 `uc 1 . 1 0 :1:0 
+[s S269 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_NOT_DONE 1 0 :1:1 
 ]
 "4819
-[s S271 . 1 `uc 1 ADON 1 0 :1:0 
+[s S272 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :4:2 
 ]
-[s S275 . 1 `uc 1 . 1 0 :1:0 
+[s S276 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
 `uc 1 CHS2 1 0 :1:4 
 `uc 1 CHS3 1 0 :1:5 
 ]
-[s S282 . 1 `uc 1 . 1 0 :1:0 
+[s S283 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 DONE 1 0 :1:1 
 ]
-[s S285 . 1 `uc 1 . 1 0 :1:0 
+[s S286 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_DONE 1 0 :1:1 
 ]
-[s S288 . 1 `uc 1 . 1 0 :1:0 
+[s S289 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
-[s S291 . 1 `uc 1 . 1 0 :1:0 
+[s S292 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 ]
-[s S294 . 1 `uc 1 . 1 0 :1:0 
+[s S295 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GODONE 1 0 :1:1 
 ]
-[u S297 . 1 `S268 1 . 1 0 `S271 1 . 1 0 `S275 1 . 1 0 `S282 1 . 1 0 `S285 1 . 1 0 `S288 1 . 1 0 `S291 1 . 1 0 `S294 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES297  1 e 1 @4034 ]
+[u S298 . 1 `S269 1 . 1 0 `S272 1 . 1 0 `S276 1 . 1 0 `S283 1 . 1 0 `S286 1 . 1 0 `S289 1 . 1 0 `S292 1 . 1 0 `S295 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES298  1 e 1 @4034 ]
 "4901
 [v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
 "4908
@@ -275,52 +324,73 @@
 [v _flags flags `uc  1 s 1 flags ]
 "185
 [v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
-"73 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_prop\LCD_Valve_prop.X\Main_program.c
+"70 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_Prop_comp.X\Main_Program.c
 [v _VdigADC_AN0 VdigADC_AN0 `ui  1 e 2 0 ]
-"75
+"72
 [v _BufferLCD_Voltage BufferLCD_Voltage `[16]uc  1 e 16 0 ]
-"76
+"73
 [v _BufferLCD_Press BufferLCD_Press `[16]uc  1 e 16 0 ]
+"75
+[v _BufferS1 BufferS1 `[8]uc  1 e 8 0 ]
+"76
+[v _BufferS2 BufferS2 `[8]uc  1 e 8 0 ]
+"77
+[v _BufferS3 BufferS3 `[8]uc  1 e 8 0 ]
 "78
-[v _PressSensor PressSensor `f  1 e 4 0 ]
-"79
-[v _VoltageSensor VoltageSensor `f  1 e 4 0 ]
+[v _BufferS4 BufferS4 `[8]uc  1 e 8 0 ]
 "80
+[v _PressSensor PressSensor `f  1 e 4 0 ]
+"81
+[v _VoltageSensor VoltageSensor `f  1 e 4 0 ]
+"82
 [v _PressPercent PressPercent `f  1 e 4 0 ]
-"165
+"84
+[v _SolS1 SolS1 `i  1 e 2 0 ]
+"85
+[v _SolS2 SolS2 `i  1 e 2 0 ]
+"86
+[v _SolS3 SolS3 `i  1 e 2 0 ]
+"87
+[v _SolS4 SolS4 `i  1 e 2 0 ]
+"208
 [v _main main `(v  1 e 1 0 ]
 {
-"178
+"222
 } 0
-"134
+"172
 [v _logic_CONTROL logic_CONTROL `(v  1 e 1 0 ]
 {
-"164
+"207
 } 0
-"3 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_prop\LCD_Valve_prop.X\LCD4b_EXSTO.c
+"3 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_Prop_comp.X\LCD4b_EXSTO.c
 [v _lcd_init lcd_init `(v  1 e 1 0 ]
 {
 "5
 [v lcd_init@i i `uc  1 a 1 5 ]
 "34
 } 0
-"118 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_prop\LCD_Valve_prop.X\Main_program.c
+"126 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_Prop_comp.X\Main_Program.c
 [v _lcd_SENSOR lcd_SENSOR `(v  1 e 1 0 ]
 {
-"132
+"140
+} 0
+"142
+[v _lcd_PERIPHERAL lcd_PERIPHERAL `(v  1 e 1 0 ]
+{
+"170
 } 0
 "9 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[u S905 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[u S1005 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
 "13
-[s S908 _IO_FILE 12 `S905 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
-[v sprintf@f f `S908  1 a 12 54 ]
+[s S1008 _IO_FILE 12 `S1005 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v sprintf@f f `S1008  1 a 12 105 ]
 "12
-[v sprintf@ap ap `[1]*.30v  1 a 1 53 ]
+[v sprintf@ap ap `[1]*.30v  1 a 1 104 ]
 "9
-[v sprintf@s s `*.30uc  1 p 1 47 ]
-[v sprintf@fmt fmt `*.31Cuc  1 p 1 48 ]
+[v sprintf@s s `*.39uc  1 p 2 47 ]
+[v sprintf@fmt fmt `*.31Cuc  1 p 1 49 ]
 "23
 } 0
 "1817 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
@@ -328,9 +398,9 @@
 {
 "1820
 [v vfprintf@cfmt cfmt `*.31uc  1 a 1 103 ]
-[s S940 _IO_FILE 0 ]
+[s S1040 _IO_FILE 0 ]
 "1817
-[v vfprintf@fp fp `*.30S940  1 p 1 44 ]
+[v vfprintf@fp fp `*.30S1040  1 p 1 44 ]
 [v vfprintf@fmt fmt `*.31Cuc  1 p 1 45 ]
 [v vfprintf@ap ap `*.30*.30v  1 p 1 46 ]
 "1840
@@ -338,17 +408,17 @@
 "1177
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 {
-[u S990 . 4 `d 1 f 4 0 ]
+[u S1095 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
 "1188
-[v vfpfcnvrt@convarg convarg `S990  1 a 4 96 ]
+[v vfpfcnvrt@convarg convarg `S1095  1 a 4 97 ]
 "1179
 [v vfpfcnvrt@cp cp `*.31uc  1 a 1 102 ]
 [v vfpfcnvrt@c c `uc  1 a 1 101 ]
 "1180
-[v vfpfcnvrt@done done `a  1 a 1 100 ]
-[s S940 _IO_FILE 0 ]
+[v vfpfcnvrt@done done `a  1 a 1 96 ]
+[s S1040 _IO_FILE 0 ]
 "1177
-[v vfpfcnvrt@fp fp `*.30S940  1 p 1 92 ]
+[v vfpfcnvrt@fp fp `*.30S1040  1 p 1 92 ]
 [v vfpfcnvrt@fmt fmt `*.30*.31uc  1 p 1 93 ]
 [v vfpfcnvrt@ap ap `*.30*.30v  1 p 1 94 ]
 "1814
@@ -378,15 +448,15 @@
 "587 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
 [v _efgtoa efgtoa `(v  1 s 1 efgtoa ]
 {
-[u S953 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
+[u S1058 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
 "592
-[v efgtoa@u u `S953  1 a 4 40 ]
-[v efgtoa@g g `S953  1 a 4 34 ]
+[v efgtoa@u u `S1058  1 a 4 40 ]
+[v efgtoa@g g `S1058  1 a 4 34 ]
 "591
 [v efgtoa@l l `d  1 a 4 27 ]
 [v efgtoa@h h `d  1 a 4 23 ]
 "592
-[v efgtoa@ou ou `S953  1 a 4 17 ]
+[v efgtoa@ou ou `S1058  1 a 4 17 ]
 "590
 [v efgtoa@n n `i  1 a 2 38 ]
 [v efgtoa@i i `i  1 a 2 31 ]
@@ -402,9 +472,9 @@
 [v efgtoa@nmode nmode `uc  1 a 1 10 ]
 [v efgtoa@mode mode `uc  1 a 1 9 ]
 [v efgtoa@pp pp `uc  1 a 1 8 ]
-[s S940 _IO_FILE 0 ]
+[s S1040 _IO_FILE 0 ]
 "587
-[v efgtoa@fp fp `*.30S940  1 p 1 84 ]
+[v efgtoa@fp fp `*.30S1040  1 p 1 84 ]
 [v efgtoa@f f `d  1 p 4 85 ]
 [v efgtoa@c c `uc  1 p 1 89 ]
 "868
@@ -418,46 +488,6 @@
 [v strcpy@dest dest `*.39uc  1 p 2 0 ]
 [v strcpy@src src `*.31Cuc  1 p 1 2 ]
 "8
-} 0
-"193 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
-[v _pad pad `(v  1 s 1 pad ]
-{
-"195
-[v pad@i i `i  1 a 2 20 ]
-[s S940 _IO_FILE 0 ]
-"193
-[v pad@fp fp `*.30S940  1 p 1 14 ]
-[v pad@buf buf `*.39uc  1 p 2 15 ]
-[v pad@p p `i  1 p 2 17 ]
-"226
-} 0
-"8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputs.c
-[v _fputs fputs `(i  1 e 2 0 ]
-{
-"11
-[v fputs@i i `i  1 a 2 12 ]
-"10
-[v fputs@c c `uc  1 a 1 11 ]
-"8
-[v fputs@s s `*.39Cuc  1 p 2 8 ]
-[u S905 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
-[s S908 _IO_FILE 12 `S905 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
-[v fputs@fp fp `*.30S908  1 p 1 10 ]
-"19
-} 0
-"8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
-[v _fputc fputc `(i  1 e 2 0 ]
-{
-[v fputc@c c `i  1 p 2 0 ]
-[u S905 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
-[s S908 _IO_FILE 12 `S905 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
-[v fputc@fp fp `*.30S908  1 p 1 2 ]
-"24
-} 0
-"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\putch.c
-[v _putch putch `(v  1 e 1 0 ]
-{
-"9
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
@@ -483,9 +513,9 @@
 "3 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
 {
-[u S1062 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S1181 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v floorf@u u `S1062  1 a 4 80 ]
+[v floorf@u u `S1181  1 a 4 80 ]
 "7
 [v floorf@m m `ul  1 a 4 74 ]
 "6
@@ -493,21 +523,21 @@
 "3
 [v floorf@x x `f  1 p 4 64 ]
 "4
-[v floorf@F521 F521 `S1062  1 s 4 F521 ]
+[v floorf@F521 F521 `S1181  1 s 4 F521 ]
 "27
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S1062 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S1181 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v ___fpclassifyf@u u `S1062  1 a 4 10 ]
+[v ___fpclassifyf@u u `S1181  1 a 4 10 ]
 "7
 [v ___fpclassifyf@e e `i  1 a 2 8 ]
 "4
 [v ___fpclassifyf@x x `f  1 p 4 0 ]
 "5
-[v ___fpclassifyf@F465 F465 `S1062  1 s 4 F465 ]
+[v ___fpclassifyf@F465 F465 `S1181  1 s 4 F465 ]
 "11
 } 0
 "43 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\fltol.c
@@ -563,7 +593,93 @@
 [v ___fleq@ff2 ff2 `d  1 p 4 4 ]
 "12
 } 0
-"83 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_prop\LCD_Valve_prop.X\LCD4b_EXSTO.c
+"513 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+[v _dtoa dtoa `(v  1 s 1 dtoa ]
+{
+"516
+[v dtoa@i i `i  1 a 2 32 ]
+[v dtoa@w w `i  1 a 2 29 ]
+"518
+[v dtoa@p p `i  1 a 2 27 ]
+"515
+[v dtoa@s s `uc  1 a 1 31 ]
+[s S1040 _IO_FILE 0 ]
+"513
+[v dtoa@fp fp `*.30S1040  1 p 1 22 ]
+[v dtoa@d d `i  1 p 2 23 ]
+"583
+} 0
+"193
+[v _pad pad `(v  1 s 1 pad ]
+{
+"195
+[v pad@i i `i  1 a 2 20 ]
+[s S1040 _IO_FILE 0 ]
+"193
+[v pad@fp fp `*.30S1040  1 p 1 14 ]
+[v pad@buf buf `*.39uc  1 p 2 15 ]
+[v pad@p p `i  1 p 2 17 ]
+"226
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 12 ]
+"10
+[v fputs@c c `uc  1 a 1 11 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 8 ]
+[u S1005 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1008 _IO_FILE 12 `S1005 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v fputs@fp fp `*.30S1008  1 p 1 10 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S1005 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1008 _IO_FILE 12 `S1005 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v fputc@fp fp `*.30S1008  1 p 1 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 6 ]
+"4
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"83 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_Prop_comp.X\LCD4b_EXSTO.c
 [v _lcd_write lcd_write `(v  1 e 1 0 ]
 {
 [v lcd_write@lin lin `uc  1 a 1 wreg ]
@@ -587,6 +703,11 @@
 [v lcd_send_byte@level level `uc  1 a 1 5 ]
 "69
 } 0
+"71
+[v _lcd_clear lcd_clear `(v  1 e 1 0 ]
+{
+"81
+} 0
 "42
 [v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
 {
@@ -606,10 +727,10 @@
 [v set_bit@cmd cmd `uc  1 a 1 1 ]
 "40
 } 0
-"111 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_prop\LCD_Valve_prop.X\Main_program.c
+"119 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_Prop_comp.X\Main_Program.c
 [v _equation_SENSOR equation_SENSOR `(v  1 e 1 0 ]
 {
-"116
+"124
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
@@ -629,21 +750,21 @@
 "8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S770 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S870 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S775 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S778 . 4 `l 1 i 4 0 `d 1 f 4 0 `S770 1 fAsBytes 4 0 `S775 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S778  1 a 4 33 ]
+[s S875 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S878 . 4 `l 1 i 4 0 `d 1 f 4 0 `S870 1 fAsBytes 4 0 `S875 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S878  1 a 4 33 ]
 "12
-[v ___flmul@grs grs `ul  1 a 4 28 ]
-[s S846 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[v ___flmul@grs grs `ul  1 a 4 27 ]
+[s S946 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S849 . 2 `s 1 i 2 0 `us 1 n 2 0 `S846 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S849  1 a 2 37 ]
+[u S949 . 2 `s 1 i 2 0 `us 1 n 2 0 `S946 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S949  1 a 2 37 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 32 ]
 "11
-[v ___flmul@aexp aexp `uc  1 a 1 27 ]
+[v ___flmul@aexp aexp `uc  1 a 1 31 ]
 "9
 [v ___flmul@sign sign `uc  1 a 1 26 ]
 "8
@@ -671,23 +792,23 @@
 [v ___fldiv@a a `d  1 p 4 43 ]
 "185
 } 0
-"102 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_prop\LCD_Valve_prop.X\Main_program.c
+"110 C:\Users\profb\OneDrive\Projetos\Microcontroladores\MICRO\3 - LCD\PIC18F4520_display_LCD\LCD_Valve_Prop_comp.X\Main_Program.c
 [v _conv_AN0 conv_AN0 `(v  1 e 1 0 ]
 {
-"109
+"117
 } 0
-"89
+"96
 [v _config_IO config_IO `(v  1 e 1 0 ]
 {
-"93
+"101
 } 0
-"83
+"90
 [v _config_FOSC config_FOSC `(v  1 e 1 0 ]
 {
-"87
+"94
 } 0
-"95
+"103
 [v _config_ADC config_ADC `(v  1 e 1 0 ]
 {
-"100
+"108
 } 0

@@ -1,4 +1,4 @@
-# 1 "Main_program.c"
+# 1 "Main_Program.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "Main_program.c" 2
+# 1 "Main_Program.c" 2
 
 
 
@@ -4689,7 +4689,7 @@ __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer suppo
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
-# 64 "Main_program.c" 2
+# 64 "Main_Program.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 3
@@ -4843,7 +4843,7 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 65 "Main_program.c" 2
+# 65 "Main_Program.c" 2
 
 # 1 "./LCD4b_EXSTO.h" 1
 # 20 "./LCD4b_EXSTO.h"
@@ -4853,10 +4853,7 @@ void lcd_cmd(char cmd);
 void lcd_send_byte(char level, char data);
 void lcd_clear(void);
 void lcd_write(char lin, char col, char *str);
-# 66 "Main_program.c" 2
-
-
-
+# 66 "Main_Program.c" 2
 
 
 
@@ -4866,9 +4863,19 @@ unsigned int VdigADC_AN0;
 unsigned char BufferLCD_Voltage[16],
               BufferLCD_Press[16];
 
+char BufferS1[8],
+     BufferS2[8],
+     BufferS3[8],
+     BufferS4[8];
+
 float PressSensor,
       VoltageSensor,
       PressPercent;
+
+int SolS1,
+    SolS2,
+    SolS3,
+    SolS4;
 
 
 void config_FOSC()
@@ -4879,6 +4886,7 @@ void config_FOSC()
 
 void config_IO()
 {
+    TRISB = 0X01;
     TRISC = 0X00;
     PORTC = 0X00;
 }
@@ -4922,36 +4930,71 @@ void lcd_SENSOR()
     lcd_write(2,10,BufferLCD_Press);
 }
 
+void lcd_PERIPHERAL()
+{
+    sprintf(BufferS1,
+            "%01d     ",
+            SolS1);
+
+    sprintf(BufferS2,
+            "%01d     ",
+            SolS2);
+
+    sprintf(BufferS3,
+            "%01d     ",
+            SolS3);
+
+    sprintf(BufferS4,
+            "%01d     ",
+            SolS4);
+
+    lcd_clear();
+    _delay((unsigned long)((20)*(8000000/4000.0)));
+    lcd_write(1,1,"S1:");
+    lcd_write(1,4,BufferS1);
+    lcd_write(1,8,"S2:");
+    lcd_write(1,11,BufferS2);
+    lcd_write(2,1,"S3:");
+    lcd_write(2,4,BufferS3);
+    lcd_write(2,8,"S4: ");
+    lcd_write(2,11,BufferS4);
+}
+
 void logic_CONTROL()
 {
     if(PressSensor <= (0.25*65))
     {
-        PORTCbits.RC0 = 1;
-        PORTCbits.RC1 = 0;
-        PORTCbits.RC2 = 0;
-        PORTCbits.RC3 = 0;
+        SolS1 = 1;
+        SolS2 = 0;
+        SolS3 = 0;
+        SolS4 = 0;
     }
     else if(PressSensor > (0.25*65) && PressSensor <= (0.50*65))
     {
-        PORTCbits.RC0 = 1;
-        PORTCbits.RC1 = 1;
-        PORTCbits.RC2 = 0;
-        PORTCbits.RC3 = 0;
+        SolS1 = 1;
+        SolS2 = 1;
+        SolS3 = 0;
+        SolS4 = 0;
     }
     else if(PressSensor > (0.50*65) && PressSensor <= (0.75*65))
     {
-        PORTCbits.RC0 = 1;
-        PORTCbits.RC1 = 1;
-        PORTCbits.RC2 = 1;
-        PORTCbits.RC3 = 0;
+        SolS1 = 1;
+        SolS2 = 1;
+        SolS3 = 1;
+        SolS4 = 0;
     }
     else if(PressSensor > (0.75*65))
     {
-        PORTCbits.RC0 = 1;
-        PORTCbits.RC1 = 1;
-        PORTCbits.RC2 = 1;
-        PORTCbits.RC3 = 1;
+        SolS1 = 1;
+        SolS2 = 1;
+        SolS3 = 1;
+        SolS4 = 1;
     }
+
+    PORTCbits.RC0 = SolS1;
+    PORTCbits.RC1 = SolS2;
+    PORTCbits.RC2 = SolS3;
+    PORTCbits.RC3 = SolS4;
 }
 void main()
 {
@@ -4964,6 +5007,7 @@ void main()
         conv_AN0();
         equation_SENSOR();
         logic_CONTROL();
-        lcd_SENSOR();
+        if(PORTBbits.RB0 == 0) lcd_SENSOR();
+        else lcd_PERIPHERAL();
     }
 }
